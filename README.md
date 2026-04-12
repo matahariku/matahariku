@@ -126,10 +126,9 @@ Kubernetes HA clusters + Observabilité full-stack + IaC sécurisée
 
 ## 🏅 **Certification**
 
-[![CKA Kubernetes Administrator](https://www.credly.com/badges/bd619a68-ce90-4a48-978c-e3bcefa0858c)
-
 **✅ CKA Obtenue**  
 **Certified Kubernetes Administrator**
+https://www.credly.com/badges/bd619a68-ce90-4a48-978c-e3bcefa0858c
 
 
 ## 📊 **GitHub Stats (Mars 2026)**
