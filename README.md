@@ -179,6 +179,7 @@ flowchart TB
     
     P1 --> H
     P2 --> VW[Vaultwarden]
+    P3 --> HV[Vault<br/>Dynamic Creds]
     P3 --> L[Lynis 90%]
     
     VW -.-> A
@@ -192,6 +193,7 @@ flowchart TB
     style KC fill:#3b82f6
     style K3S fill:#e5e7eb
     style H fill:#ef4444
+    style VW fill:#8b5cf6
     style VW fill:#7c3aed
 ```
 ---
