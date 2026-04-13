@@ -1,22 +1,26 @@
 <div align="center">
-<img src="https://github-readme-stats.vercel.app/api?username=matahariku&show_icons=true&theme=radical&hide_border=true&bg_color=0d1117&title_color=60a5fa&text_color=f1f1f1&icon_color=60a5fa" />
+
+<!-- ANIMASI HEADER CANTIK 👩‍💻 -->
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=28&pause=1000&color=60A5FA&center=true&vCenter=true&multiline=true&width=600&lines=%F0%9F%91%A9%EF%B8%8F%E2%80%8D%F0%9F%92%BB+Ing%C3%A9nieure+DevOps;CKA+Certified+%F0%9F%87%AB%F0%9F%87%B7;K3s+HA+%2B+ArgoCD+%2B+Grafana;Proxmox+Fortinet+%2B+Observability;Amsterdam+Hybrid+POS+Expert" alt="Typing SVG" />
+
+<!-- BADGES ANIMASI GLASSMORPHISM -->
+<div style="display: flex; gap: 10px; justify-content: center; flex-wrap: wrap;">
+  <img src="https://img.shields.io/badge/K3s%20HA-10b981?style=for-the-badge&logo=kubernetes&logoColor=white" />
+  <img src="https://img.shields.io/badge/ArgoCD-GitOps-ef4444?style=for-the-badge&logo=argocd&logoColor=white" />
+  <img src="https://img.shields.io/badge/Proxmox%20HA-f59e0b?style=for-the-badge&logo=proxmox&logoColor=white" />
+  <img src="https://img.shields.io/badge/Grafana-8b5cf6?style=for-the-badge&logo=grafana&logoColor=white" />
 </div>
 
-<!-- TERMINAL ANIMASI -->
-```bash
-fe@ops1:~$ kubectl get nodes
-NAME     STATUS   ROLES                      AGE   VERSION
-ceph-0   Ready    control-plane,etcd,worker   59d   v1.34.2+k3s1
-dev1     Ready    control-plane,etcd,worker   59d   v1.34.2+k3s1
-ops1     Ready    control-plane,etcd          59d   v1.34.2+k3s1
+<!-- GLASSMORPHISM STATS BAR -->
+<div style="background: linear-gradient(135deg, rgba(99, 102, 241, 0.1) 0%, rgba(236, 72, 153, 0.1) 100%); 
+            backdrop-filter: blur(10px); border-radius: 20px; padding: 20px; margin: 20px 0; border: 1px solid rgba(255,255,255,0.2);">
+  <p align="center">
+    <b>👩‍💻 Farida ERYANI | Bordeaux 🇫🇷</b><br>
+    <span style="color: #10b981">✅ CDI/CDD/Freelance IMMÉDIAT</span>
+  </p>
+</div>
 
-fe@ops1:~$ argocd app list
-NAME        SYNC STATUS   HEALTH STATUS
-sre-laravel Synced        Healthy ✅
-
-fe@ops1:~$ curl localhost:8080
-Laravel SRE LIVE! 🚀
-```
+</div>
 
 <div align="center">
 
