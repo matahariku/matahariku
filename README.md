@@ -1,43 +1,30 @@
 <div align="center">
-
-<!-- BEAT GRAPHIC ANIMASI + HEARTBEAT EFFECT 🔥 -->
-<img src="https://github-profile-trophy.vercel.app/?username=matahariku&theme=radical&no-bg=true&margin-w=15&margin-h=15&no-frame=true" alt="Trophy" />
-
-<!-- PULSE / BEAT ANIMASI SUPER COOL -->
-<div style="animation: pulse 2s infinite; display: inline-block;">
-  <img src="https://img.shields.io/badge/SRE%20LIVE-%F0%9F%92%BB-10b981?style=for-the-badge&logo=kubernetes&logoColor=white&labelColor=0d1117" />
-</div>
-
-<style>
-@keyframes pulse {
-  0% { transform: scale(1); }
-  50% { transform: scale(1.05); }
-  100% { transform: scale(1); }
-}
-</style>
-
-<!-- TERMINAL BEAT -->
-<div style="background: #0d1117; padding: 20px; border-radius: 10px; border-left: 4px solid #10b981;">
-<pre style="color: #60a5fa; font-family: 'Fira Code', monospace; margin: 0;">
-<span style="color: #10b981">fe@ops1</span>:~$ <span style="animation: blink 1s infinite;">█</span>
-kubectl get nodes
-NAME     STATUS  ROLES           AGE  VERSION
-<span style="color: #10b981">ceph-0  Ready   ★DUAL CP+W    59d  v1.34.2</span>
-<span style="color: #10b981">dev1    Ready   ★DUAL CP+W    59d  v1.34.2</span>
-ops1     Ready   CP+etcd        59d  v1.34.2
-
-<span style="color: #10b981">✓ Laravel LIVE</span> localhost:8080
-<span style="color: #10b981">✓ ArgoCD Synced</span> sre-laravel
-</pre>
-</div>
+<!-- SKILLS PROGRESS BEAT -->
+<table>
+<tr>
+  <td><b>Kubernetes CKA</b></td>
+  <td>
+    <div style="background: #e5e7eb; border-radius: 10px; height: 10px; width: 200px;">
+      <div style="background: linear-gradient(90deg, #10b981, #059669); height: 100%; width: 95%; border-radius: 10px; animation: progress 3s infinite;"></div>
+    </div>
+  </td>
+</tr>
+<tr>
+  <td><b>ArgoCD GitOps</b></td>
+  <td>
+    <div style="background: #e5e7eb; border-radius: 10px; height: 10px; width: 200px;">
+      <div style="background: linear-gradient(90deg, #ef4444, #dc2626); height: 100%; width: 90%; border-radius: 10px;"></div>
+    </div>
+  </td>
+</tr>
+</table>
 
 <style>
-@keyframes blink {
-  0%, 50% { opacity: 1; }
-  51%, 100% { opacity: 0; }
+@keyframes progress {
+  0% { width: 0%; }
+  100% { width: 95%; }
 }
 </style>
-
 </div>
 
 <div align="center">
