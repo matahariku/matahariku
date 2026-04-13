@@ -1,5 +1,50 @@
+<div align="center">
+
+<!-- BARIS 1: EMAS MURNI + LOGO PUTIH -->
+<img src="https://img.shields.io/badge/FARIDA%20ERYANI-FFD700?style=for-the-badge&logo=kubernetes&logoColor=white&labelColor=0d1117" width="100%"/>
+
+<!-- BARIS 2: KUNING SEDANG + LOGO PUTIH -->
+<img src="https://img.shields.io/badge/ING%C3%89NIEURE%20DEVOPS-CKA%20CERTIFIED-FDB813?style=for-the-badge&logo=kubernetes&logoColor=white&labelColor=181717" width="100%"/>
+
+<!-- BARIS 3: KUNING CERAH + LOGO PUTIH -->
+<img src="https://img.shields.io/badge/AUTOMATISATION-INFRASTRUCTURE-FFEA00?style=for-the-badge&logo=terraform&logoColor=white&labelColor=0d1117" width="100%"/>
+
+</div>
+
+<div align="center">
+  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=18&duration=30000&pause=800&color=60A5FA&center=true&vCenter=true&multiline=false&width=600&lines=Cloud%7CIaC%7CDevOps%0AIng%C3%A9nieure+DevOps+CKA%0AAWS%7CTerraform%7CKubernetes" alt="Typing SVG" />
+</div>
+
+<p align="center">
+  <a href="https://komarev.com/ghpvc/?username=matahariku&style=for-the-badge&color=1d4ed8&label=PROFILE+VIEWS">
+    <img src="https://komarev.com/ghpvc/?username=matahariku&style=for-the-badge&color=1d4ed8&label=PROFILE+VIEWS" />
+  </a>
+</p>
+
+<p align="center">
+  <a href="https://www.linkedin.com/in/farida-eryani-257480172/">
+    <img src="https://img.shields.io/badge/LinkedIn-Farida%20ERYANI-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" />
+  </a>
+  <img src="https://img.shields.io/badge/Bordeaux%2C_France-%F0%9F%87%AB%F0%9F%87%B7-1d4ed8?style=for-the-badge" />
+</p>
 
 ---
+
+## 🧑<200d>💻 **À propos**
+```yaml
+name:     Farida ERYANI
+role:     Ingénieure DevOps SRE - CKA Certified (CDI/CDD/Freelance)
+location: Bordeaux, France 🇫 🇷  (Toulouse/Marseille/Paris)
+
+background:
+  - Laravel SRE GitOps (04/2026 → LIVE)
+  - Amsterdam POS Hybrid (04/2025-03/2026)
+  - E-Santé Bretagne DevOps (2023-2025)
+  - IRIS IT SysAdmin (2022-2023)
+```
+
+---
+
 
 ## 🛠️ **Stack Technique**
 
@@ -29,6 +74,7 @@
 | **Jenkins CI** | Pipeline automation | `jenkins.okfe.net` | 🟢 **LIVE** |
 | **SonarQube** | Code quality analysis | `sonarqube.okfe.net` | 🟢 **LIVE** |
 | **GitLab** | Source code management | `gitlab.com/matahariku` | 🟢 **LIVE** |
+| **Gitea** | Source code management | `git.kalou.net` | 🟢 **LIVE** |
 
 ---
 
@@ -124,12 +170,21 @@ flowchart TB
 ## 📫 **Contact Professionnel**
 
 <div align="center">
-**🏢 Régions:** Toulouse • Marseille • Paris • Bordeaux • Aix • Toulon \  
-**💼 Disponible:** ✅ **CDI/CDD/Freelance IMMÉDIAT**  \
-**🔗** [✉️ Email](mailto:febdx33000@gmail.com) | [🔗 LinkedIn](https://linkedin.com/in/farida-eryani-257480172)
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/farida-eryani-257480172/)
-[![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:febdx33000@gmail.com)
+[![Toulouse](https://img.shields.io/badge/Toulouse-%23FF6F00?style=for-the-badge&logo=location&logoColor=white)](https://www.google.com/maps/place/Toulouse)
+[![Paris](https://img.shields.io/badge/Paris-%230077B5?style=for-the-badge&logo=location&logoColor=white)](https://www.google.com/maps/place/Paris)
+[![Bordeaux](https://img.shields.io/badge/Bordeaux-%23249DD1?style=for-the-badge&logo=location&logoColor=white)](https://www.google.com/maps/place/Bordeaux)
+
+<br><br>
+
+[![Disponible](https://img.shields.io/badge/Disponible-IMM%C3%89DIAT-10b981?style=for-the-badge&logo=clock&logoColor=white)](mailto:febdx33000@gmail.com)
+[![CDI/CDD](https://img.shields.io/badge/CDI/CDD/Freelance-FFD700?style=for-the-badge&logo=briefcase&logoColor=black)](https://linkedin.com/in/farida-eryani-257480172)
+
+<br><br>
+
+[![Email](https://img.shields.io/badge/Email-febdx33000@gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:febdx33000@gmail.com)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Farida%20ERYANI-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/farida-eryani-257480172)
+
 </div>
 
 ---
