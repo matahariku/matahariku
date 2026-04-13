@@ -86,6 +86,7 @@ flowchart TB
         P1[ops1<br/>control-plane+etcd]
         P2[dev1<br/>★DUAL CP+etcd+worker]
         P3[ceph-0<br/>★DUAL CP+etcd+worker]
+        V[🔐 Vault<br/>Secrets Mgmt]
     end
     
     subgraph K3S ["K3s HA Cluster"]
@@ -123,6 +124,7 @@ flowchart TB
         N1[ops1 CP]
         N2[dev1 ★DUAL]
         N3[ceph-0 ★DUAL]
+        V[🔐 Vault<br/>Secrets Mgmt]
     end
     
     subgraph OBS ["Observability"]
@@ -192,7 +194,7 @@ flowchart TB
 </table>
 
 </div>
----
+
 
 <div align="center">
 <img src="https://img.shields.io/badge/K3s%20HA%203CP%2B3W%20Proxmox%20Cloud-Init%20Fortinet%20HA%20ArgoCD%20GitOps%20Full%20Observabilit%C3%A9%20EXPERT-FFD700?style=for-the-badge&logo=kubernetes&logoColor=black&labelColor=0d1117" width="100%"/>
