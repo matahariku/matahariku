@@ -1,23 +1,61 @@
 <div align="center">
-<!-- SKILLS PROGRESS BEAT -->
-<table>
-<tr>
-  <td><b>Kubernetes CKA</b></td>
-  <td>
-    <div style="background: #e5e7eb; border-radius: 10px; height: 10px; width: 200px;">
-      <div style="background: linear-gradient(90deg, #10b981, #059669); height: 100%; width: 95%; border-radius: 10px; animation: progress 3s infinite;"></div>
-    </div>
-  </td>
-</tr>
-<tr>
-  <td><b>ArgoCD GitOps</b></td>
-  <td>
-    <div style="background: #e5e7eb; border-radius: 10px; height: 10px; width: 200px;">
-      <div style="background: linear-gradient(90deg, #ef4444, #dc2626); height: 100%; width: 90%; border-radius: 10px;"></div>
-    </div>
-  </td>
-</tr>
-</table>
+
+<!-- SKILLS PROGRESS BAR ANIMASI CANTIK! -->
+<div style="max-width: 600px; margin: 20px auto;">
+
+<div style="margin-bottom: 15px;">
+  <div style="display: flex; justify-content: space-between; margin-bottom: 5px;">
+    <span><b>Kubernetes CKA</b></span>
+    <span>95%</span>
+  </div>
+  <div style="background: #e5e7eb; border-radius: 10px; height: 12px; overflow: hidden;">
+    <div style="background: linear-gradient(90deg, #10b981, #059669); 
+                height: 100%; width: 0%; 
+                border-radius: 10px; 
+                animation: progress 3s ease-in-out infinite;"></div>
+  </div>
+</div>
+
+<div style="margin-bottom: 15px;">
+  <div style="display: flex; justify-content: space-between; margin-bottom: 5px;">
+    <span><b>ArgoCD GitOps</b></span>
+    <span>92%</span>
+  </div>
+  <div style="background: #e5e7eb; border-radius: 10px; height: 12px; overflow: hidden;">
+    <div style="background: linear-gradient(90deg, #ef4444, #dc2626); 
+                height: 100%; width: 0%; 
+                border-radius: 10px; 
+                animation: progress 3.5s ease-in-out infinite 0.5s;"></div>
+  </div>
+</div>
+
+<div style="margin-bottom: 15px;">
+  <div style="display: flex; justify-content: space-between; margin-bottom: 5px;">
+    <span><b>Proxmox HA</b></span>
+    <span>88%</span>
+  </div>
+  <div style="background: #e5e7eb; border-radius: 10px; height: 12px; overflow: hidden;">
+    <div style="background: linear-gradient(90deg, #f59e0b, #d97706); 
+                height: 100%; width: 0%; 
+                border-radius: 10px; 
+                animation: progress 4s ease-in-out infinite 1s;"></div>
+  </div>
+</div>
+
+<div style="margin-bottom: 15px;">
+  <div style="display: flex; justify-content: space-between; margin-bottom: 5px;">
+    <span><b>Grafana Observability</b></span>
+    <span>90%</span>
+  </div>
+  <div style="background: #e5e7eb; border-radius: 10px; height: 12px; overflow: hidden;">
+    <div style="background: linear-gradient(90deg, #8b5cf6, #7c3aed); 
+                height: 100%; width: 0%; 
+                border-radius: 10px; 
+                animation: progress 3.2s ease-in-out infinite 1.5s;"></div>
+  </div>
+</div>
+
+</div>
 
 <style>
 @keyframes progress {
@@ -25,7 +63,10 @@
   100% { width: 95%; }
 }
 </style>
+
 </div>
+
+
 
 <div align="center">
 
