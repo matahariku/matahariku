@@ -147,71 +147,52 @@ flowchart TB
     style NL fill:#fbbf24
 ```
 ---
-
-```mermaid
-## 🛡️ **Security Stack Production**
+## 🛡️ **Security Stack Enterprise**
 
 | **Tool** | **Role** | **Status** |
 |----------|----------|------------|
-| **🔒 Harbor** | Private Registry | `harbor.okfe.net` 🟢 |
-| **💳 Vaultwarden** | Secrets Mgmt | K8s integration 🟢 |
+| **🔒 Harbor** | Private Registry + Keycloak | `harbor.okfe.net` 🟢 |
+| **💳 Vaultwarden** | Secrets Management | K8s integration 🟢 |
 | **🛡️ Lynis** | Hardening Audit | **90% Compliance** 🟢 |
-| **🔐 Keycloak** | Identity Provider | OIDC + SSO 🟢 |
-| **⚡ Vault** | Dynamic Secrets | Service credentials 🟢 |
-| **🐛 Trivy** | Vuln Scanning | CI/CD pipeline 🟢 |
-| **👁️ Falco** | Runtime Security | Pod monitoring 🟢 |
+| **🔐 Keycloak + AD** | **Enterprise SSO** | LDAP + OIDC 🟢 |
+| **⚡ Vault** | Dynamic Credentials | Service accounts 🟢 |
+| **🐛 Trivy** | Image Vulnerability | CI/CD pipeline 🟢 |
+| **👁️ Falco** | Runtime Protection | Pod monitoring 🟢 |
 | **🔍 SonarQube** | Code Quality | Laravel/Golang 🟢 |
 
-**Full security chain: Code → Image → Deploy → Runtime!** 🔒
+---
 
-## 🔒 Security Flowchart (Infra Protection)**
+## 🔒 **Security Flowchart** 
 
+```mermaid
 flowchart TB
-    subgraph ENTERPRISE ["Enterprise Auth"]
-        AD[Active Directory<br/>LDAP Backend]
-        KC[Keycloak<br/>OIDC Frontend]
-    end
+    AD[Active Directory<br/>LDAP] --> KC[Keycloak<br/>OIDC]
     
-    subgraph INFRA ["K3s HA Cluster"]
+    subgraph K3S["K3s HA Cluster"]
         P1[ceph-0 ★DUAL]
-        P2[dev1 ★DUAL] 
+        P2[dev1 ★DUAL]
         P3[ops1 CP]
     end
     
-    subgraph SECURE ["Security Layer"]
-        H[Harbor<br/>Image Scanning]
-        V[Vaultwarden<br/>Secrets]
-        L[Lynis<br/>90% Compliance]
-        T[Trivy<br/>Vuln Scan]
-        F[Falco<br/>Runtime]
-        S[SonarQube<br/>Code]
-    end
-    
-    subgraph APPS ["Production Apps"]
-        A[Laravel SRE]
-        B[Golang API]
-    end
-    
-    AD --> KC
-    KC --> H
-    KC --> A
+    KC --> H[Harbor]
+    KC --> A[Laravel SRE]
     
     P1 --> H
-    P2 --> V
-    P3 --> L
+    P2 --> VW[Vaultwarden]
+    P3 --> L[Lynis 90%]
     
-    V -.-> A
-    V -.-> B
-    T --> H
-    F --> P1
+    VW -.-> A
+    VW -.-> B[Golang API]
+    T[Trivy] --> H
+    F[Falco] --> P1
     F --> P2
-    S --> A
+    SQ[SonarQube] --> A
     
-    style ENTERPRISE fill:#e0f2fe
-    style SECURE fill:#fee2e2
-    style H fill:#ef4444
-    style V fill:#7c3aed
+    style AD fill:#8b5cf6
     style KC fill:#3b82f6
+    style K3S fill:#e5e7eb
+    style H fill:#ef4444
+    style VW fill:#7c3aed
 ```
 ---
 
