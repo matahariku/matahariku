@@ -119,34 +119,31 @@ flowchart TB
 
 ```mermaid
 flowchart TB
-    subgraph FR ["France: Proxmox HA Cluster"]
-        N1[ops1 control-plane]
-        N2[dev1 ★DUAL CP+worker]
-        N3[ceph-0 ★DUAL CP+worker]
+    subgraph FR ["France Proxmox HA"]
+        N1[ops1 CP]
+        N2[dev1 ★DUAL]
+        N3[ceph-0 ★DUAL]
     end
     
-    subgraph OBS ["Observability Stack"]
-        M1[Grafana+Prometheus]
-        M2[Loki+Jaeger+Tempo]
-        M3[Alloy+OpenTelemetry]
+    subgraph OBS ["Observability"]
+        M[Grafana+Prom+Loki<br/>Alloy+OTel]
     end
     
-    subgraph NL ["Amsterdam Restaurant"]
-        POS[Python+Android<br/>Table Menu Runtime]
-        OVH[OVH VPS NL<br/>SSH FR→NL]
+    subgraph NL ["Amsterdam POS"]
+        POS[Python+Android]
+        OVH[OVH VPS NL]
     end
     
-    N2 --> M1
-    N3 --> M2
+    N2 --> M
+    N3 --> M
     POS --> OVH
-    OVH --> M3
+    OVH --> M
     N1 -.-> OVH
     
-    style FR fill:#f3f4f6
-    style OBS fill:#8b5cf6
-    style POS fill:#f59e0b
+    style FR fill:#e5e7eb
+    style OBS fill:#a78bfa
+    style NL fill:#fbbf24
 ```
-
 ---
 
 ## 🏅 **Certification**
@@ -159,9 +156,9 @@ flowchart TB
 
 **244 contributions** • **24 repositories**  
 **Top Repos:** 
-- [Farida-Eryani](https://github.com/matahariku/Farida-Eryani)
+- [Farida-Eryani](https://github.com/matahariku/laravel-go-observ)
 - [project-Amsterdam](https://github.com/matahariku/project-Amsterdam) 
-- [K8s-Observability](https://github.com/matahariku/K8s-Observability)
+- [K8s-Observability](https://github.com/matahariku/grafana-dashboard)
 
 [![GitHub](https://img.shields.io/badge/GitHub-24%20repos-black?style=for-the-badge&logo=github)](https://github.com/matahariku)
 
@@ -175,7 +172,7 @@ flowchart TB
 <tr>
 <td align="center" width="33%">
   <b>🏢 Régions</b><br>
-  <code>Toulouse • Paris • Bordeaux<br>Marseille • Aix-en-Provence<br>Toulon</code>
+  <code>Toulouse • Paris • Bordeaux • Marseille • Aix-en-Provence • Toulon</code>
 </td>
 <td align="center" width="33%">
   <b>💼 Disponible</b><br>
