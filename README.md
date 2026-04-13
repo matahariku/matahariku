@@ -116,7 +116,7 @@ flowchart TB
 
 ---
 
-## 🌐 **Flowchart Amsterdam POS (Hybrid Infra)**
+## 🌐 **Flowchart Amsterdam POS/ point-of-sale (Hybrid Infra)**
 
 ```mermaid
 flowchart TB
@@ -147,6 +147,8 @@ flowchart TB
     style NL fill:#fbbf24
 ```
 ---
+
+```mermaid
 ## 🛡️ **Security Stack Production**
 
 | **Tool** | **Role** | **Status** |
@@ -167,7 +169,7 @@ flowchart TB
 flowchart TB
     subgraph ENTERPRISE ["Enterprise Auth"]
         AD[Active Directory<br/>LDAP Backend]
-        K[Keycloak<br/>OIDC Frontend]
+        KC[Keycloak<br/>OIDC Frontend]
     end
     
     subgraph INFRA ["K3s HA Cluster"]
@@ -178,13 +180,11 @@ flowchart TB
     
     subgraph SECURE ["Security Layer"]
         H[Harbor<br/>Image Scanning]
-        V[Vault<br/>Secrets]
+        V[Vaultwarden<br/>Secrets]
         L[Lynis<br/>90% Compliance]
-        K[Keycloak<br/>OIDC Auth]
         T[Trivy<br/>Vuln Scan]
         F[Falco<br/>Runtime]
-        S[SonarQube<br/>Code Quality]
-        HV[HashiCorp Vault<br/>Dynamic Creds]
+        S[SonarQube<br/>Code]
     end
     
     subgraph APPS ["Production Apps"]
@@ -192,26 +192,30 @@ flowchart TB
         B[Golang API]
     end
     
+    AD --> KC
+    KC --> H
+    KC --> A
+    
     P1 --> H
     P2 --> V
     P3 --> L
     
-    K --> H
-    K --> A
     V -.-> A
     V -.-> B
-    HV -.-> K
-    
     T --> H
     F --> P1
     F --> P2
     S --> A
     
+    style ENTERPRISE fill:#e0f2fe
     style SECURE fill:#fee2e2
     style H fill:#ef4444
     style V fill:#7c3aed
+    style KC fill:#3b82f6
+```
+---
 
-## 🛡️ Security Workflow Detail**
+## 🛡️ **Security Workflow Detail**
 1. **Developer** → Git push (SonarQube scan)
 2. **GitHub Actions** → Trivy vuln scan  
 3. **Harbor** → Image quarantine (Keycloak auth)
@@ -223,7 +227,7 @@ flowchart TB
 
 ---
 
-## 🔐 Keycloak + Active Directory Architecture**
+## 🔐 **Keycloak + Active Directory Architecture**
 
 **Backend:** Active Directory (LDAP) ← User database
 **Frontend:** Keycloak (OIDC/SAML) ← SSO Gateway  
