@@ -1,47 +1,3 @@
-<div align="center">
-  
-<!-- BARIS 1: EMAS MURNI + LOGO PUTIH -->
-<img src="https://img.shields.io/badge/FARIDA%20ERYANI-FFD700?style=for-the-badge&logo=kubernetes&logoColor=white&labelColor=0d1117" width="100%"/>
-
-<!-- BARIS 2: KUNING SEDANG + LOGO PUTIH -->
-<img src="https://img.shields.io/badge/ING%C3%89NIEURE%20DEVOPS-CKA%20CERTIFIED-FDB813?style=for-the-badge&logo=kubernetes&logoColor=white&labelColor=181717" width="100%"/>
-
-<!-- BARIS 3: KUNING CERAH + LOGO PUTIH -->
-<img src="https://img.shields.io/badge/AUTOMATISATION-INFRASTRUCTURE-FFEA00?style=for-the-badge&logo=terraform&logoColor=white&labelColor=0d1117" width="100%"/>
-
-</div>
-
-<div align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=18&duration=30000&pause=800&color=60A5FA&center=true&vCenter=true&multiline=false&width=600&lines=Cloud%7CIaC%7CDevOps%0AIng%C3%A9nieure+DevOps+CKA%0AAWS%7CTerraform%7CKubernetes" alt="Typing SVG" />
-</div>
-
-<p align="center">
-  <a href="https://komarev.com/ghpvc/?username=matahariku&style=for-the-badge&color=1d4ed8&label=PROFILE+VIEWS">
-    <img src="https://komarev.com/ghpvc/?username=matahariku&style=for-the-badge&color=1d4ed8&label=PROFILE+VIEWS" />
-  </a>
-</p>
-
-<p align="center">
-  <a href="https://www.linkedin.com/in/farida-eryani-257480172/">
-    <img src="https://img.shields.io/badge/LinkedIn-Farida%20ERYANI-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" />
-  </a>
-  <img src="https://img.shields.io/badge/Bordeaux%2C_France-%F0%9F%87%AB%F0%9F%87%B7-1d4ed8?style=for-the-badge" />
-</p>
-
----
-
-## 🧑‍💻 **À propos**
-```yaml
-name:     Farida ERYANI
-role:     Ingénieure DevOps SRE - CKA Certified (CDI/CDD/Freelance)
-location: Bordeaux, France 🇫🇷 (Toulouse/Marseille/Paris)
-
-background: 
-  - Laravel SRE GitOps (04/2026 → LIVE)
-  - Amsterdam POS Hybrid (04/2025-03/2026)
-  - E-Santé Bretagne DevOps (2023-2025)
-  - IRIS IT SysAdmin (2022-2023)
-```
 
 ---
 
@@ -49,14 +5,15 @@ background:
 
 | **Domain** | **Expertise** |
 |------------|---------------|
-| **🧠 Container** | Docker • **Kubernetes CKA** • Ceph-Rook • GlusterFS |
+| **🏗️ CLUSTER** | **K3s HA 3CP+3W** • **Proxmox HA** • **Cloud-Init Ansible** |
+| **🧠 Container** | **Docker** • **Kubernetes CKA** • Ceph-Rook • GlusterFS |
 | **🔧 IaC** | **Terraform** • **Ansible** • **ArgoCD** • Helm • Kustomize |
 | **⚡ CI/CD** | **GitHub Actions** • **Jenkins** • GitLab CI • Gitea |
-| **☁️ Cloud** | **Proxmox HA** • **Cloud-Init** • AWS • Azure • OVH |
 | **📈 Observabilité** | **Grafana** • **Prometheus** • **Loki** • Jaeger • Tempo • OTel |
 | **🛡️ Sécurité** | **Trivy** • **Falco** • **SonarQube** • Vault • **Fortinet HA** • Harbor |
+| **☁️ Cloud** | **OVH Hybrid** • AWS • Azure • **Cloud-Init Expert** |
+| **🌐 Réseaux** | **Fortinet HA** • Cisco • pfSense • VLAN/VPN/SD-WAN • NGINX • HAProxy |
 | **💾 Stockage** | Ceph-Rook • Velero • AWS S3 • GlusterFS |
-| **🌐 Réseaux** | **Fortinet** • Cisco • pfSense • VLAN/VPN/SD-WAN • NGINX • HAProxy |
 | **💻 Langages** | Bash • Python • PHP/Laravel • **Golang** |
 
 ---
@@ -66,34 +23,48 @@ background:
 | **Projet** | **Description** | **URL Live** | **Status** |
 |------------|-----------------|--------------|------------|
 | **Laravel SRE** | GitOps→ArgoCD→K3s→nginx-ingress | `localhost:8080` | 🟢 **LIVE** |
-| **Grafana Dash** | Observabilité full-stack | `grafana.okfe.net` | 🟢 **LIVE** |
+| **Grafana Dash** | Full-stack observability | `grafana.okfe.net` | 🟢 **LIVE** |
 | **ArgoCD UI** | GitOps dashboard | `argocd.okfe.net` | 🟢 **LIVE** |
-| **Harbor Reg** | Private registry | `harbor.okfe.net` | 🟢 **LIVE** |
+| **Harbor Reg** | Private container registry | `harbor.okfe.net` | 🟢 **LIVE** |
 | **Jenkins CI** | Pipeline automation | `jenkins.okfe.net` | 🟢 **LIVE** |
-| **SonarQube** | Code quality | `sonarqube.okfe.net` | 🟢 **LIVE** |
-| **GitLab** | Source management | `gitlab.com/matahariku` | 🟢 **LIVE** |
-
-**Cluster K3s:** `ceph-0(Ready) • ops1(Ready) • dev1(Ready)` ✅
+| **SonarQube** | Code quality analysis | `sonarqube.okfe.net` | 🟢 **LIVE** |
+| **GitLab** | Source code management | `gitlab.com/matahariku` | 🟢 **LIVE** |
 
 ---
 
 ## 🔭 **Flowchart Laravel SRE Pipeline**
 
 ```mermaid
-flowchart TD
-    A[GitHub<br/>harbor-okfe.net] --> B[ArgoCD<br/>sre-laravel]
-    B --> C[K3s HA<br/>ceph-0+ops1+dev1]
-    D[Harbor<br/>laravel-sre:v1] --> C
-    C --> E[nginx-ingress<br/>192.168.1.110]
-    E --> F[Laravel<br/>localhost:8080 ✅]
+flowchart TB
+    subgraph PHYSICAL ["3x Proxmox HA Physical Nodes"]
+        P1[ops1<br/>control-plane+etcd]
+        P2[dev1<br/>★DUAL CP+etcd+worker]
+        P3[ceph-0<br/>★DUAL CP+etcd+worker]
+    end
     
-    G[Jenkins<br/>jenkins.okfe.net] --> B
-    H[SonarQube<br/>sonarqube.okfe.net] --> G
-    I[Falco+Trivy<br/>Security Dashboard] --> C
+    subgraph K3S ["K3s HA Cluster"]
+        A[ArgoCD<br/>sre-laravel App]
+        B[Harbor<br/>laravel-sre:v1]
+        C[nginx-ingress<br/>192.168.1.110]
+        D[Laravel App<br/>localhost:8080 ✅]
+    end
     
-    style A fill:#1f6feb
-    style F fill:#10b981
-    style C fill:#3b82f6
+    subgraph SECURITY ["Security Dashboard"]
+        S1[Falco+Trivy<br/>→ Grafana]
+    end
+    
+    P1 --> A
+    P2 --> A
+    P3 --> A
+    B --> A
+    A --> C
+    C --> D
+    S1 --> A
+    
+    style P1 fill:#3b82f6
+    style P2 fill:#10b981
+    style P3 fill:#10b981
+    style D fill:#ef4444
 ```
 
 ---
@@ -102,18 +73,32 @@ flowchart TD
 
 ```mermaid
 flowchart TB
-    A[Proxmox HA FR<br/>Cloud-Init Expert] --> B[K3s Observability<br/>ceph-0+2+3]
-    B --> C[Grafana/Prometheus/Loki<br/>Alloy+OTel Dashboard]
+    subgraph FR ["France: Proxmox HA Cluster"]
+        N1[ops1 control-plane]
+        N2[dev1 ★DUAL CP+worker]
+        N3[ceph-0 ★DUAL CP+worker]
+    end
     
-    D[Amsterdam POS<br/>Python+Android Menu] --> E[OVH VPS NL<br/>SSH FR→NL]
-    E --> F[Table Menu API<br/>Real-time Orders]
-    F --> C
+    subgraph OBS ["Observability Stack"]
+        M1[Grafana+Prometheus]
+        M2[Loki+Jaeger+Tempo]
+        M3[Alloy+OpenTelemetry]
+    end
     
-    G[France Bastion<br/>fe@ops1 → Fortinet] -.-> E
+    subgraph NL ["Amsterdam Restaurant"]
+        POS[Python+Android<br/>Table Menu Runtime]
+        OVH[OVH VPS NL<br/>SSH FR→NL]
+    end
     
-    style A fill:#10b981
-    style D fill:#f59e0b
-    style C fill:#8b5cf6
+    N2 --> M1
+    N3 --> M2
+    POS --> OVH
+    OVH --> M3
+    N1 -.-> OVH
+    
+    style FR fill:#f3f4f6
+    style OBS fill:#8b5cf6
+    style POS fill:#f59e0b
 ```
 
 ---
@@ -127,7 +112,10 @@ flowchart TB
 ## 📊 **GitHub Stats** (Avril 2026)
 
 **244 contributions** • **24 repositories**  
-**Top:** Farida-Eryani • project-Amsterdam • K8s-Observability
+**Top Repos:** 
+- [Farida-Eryani](https://github.com/matahariku/Farida-Eryani)
+- [project-Amsterdam](https://github.com/matahariku/project-Amsterdam) 
+- [K8s-Observability](https://github.com/matahariku/K8s-Observability)
 
 [![GitHub](https://img.shields.io/badge/GitHub-24%20repos-black?style=for-the-badge&logo=github)](https://github.com/matahariku)
 
@@ -136,8 +124,8 @@ flowchart TB
 ## 📫 **Contact Professionnel**
 
 <div align="center">
-**🏢 Régions:** Toulouse • Marseille • Paris • Bordeaux • Aix • Toulon  
-**💼 Disponible:** ✅ **CDI/CDD/Freelance IMMÉDIAT**  
+**🏢 Régions:** Toulouse • Marseille • Paris • Bordeaux • Aix • Toulon \  
+**💼 Disponible:** ✅ **CDI/CDD/Freelance IMMÉDIAT**  \
 **🔗** [✉️ Email](mailto:febdx33000@gmail.com) | [🔗 LinkedIn](https://linkedin.com/in/farida-eryani-257480172)
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/farida-eryani-257480172/)
@@ -147,5 +135,5 @@ flowchart TB
 ---
 
 <div align="center">
-<img src="https://img.shields.io/badge/Kubernetes%20CKA%20%2B%20GitOps%20ArgoCD%20%2B%20Terraform%20%2B%20Proxmox%20HA%20%2B%20Fortinet%20%2B%20Observabilit%C3%A9%20Expert-FFD700?style=for-the-badge&logo=kubernetes&logoColor=black&labelColor=0d1117" width="100%"/>
+<img src="https://img.shields.io/badge/K3s%20HA%203CP%2B3W%20Proxmox%20Cloud-Init%20Fortinet%20HA%20ArgoCD%20GitOps%20Full%20Observabilit%C3%A9%20EXPERT-FFD700?style=for-the-badge&logo=kubernetes&logoColor=black&labelColor=0d1117" width="100%"/>
 </div>
