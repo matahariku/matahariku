@@ -147,6 +147,95 @@ flowchart TB
     style NL fill:#fbbf24
 ```
 ---
+## 🛡️ **Security Stack Production**
+
+| **Tool** | **Role** | **Status** |
+|----------|----------|------------|
+| **🔒 Harbor** | Private Registry | `harbor.okfe.net` 🟢 |
+| **💳 Vaultwarden** | Secrets Mgmt | K8s integration 🟢 |
+| **🛡️ Lynis** | Hardening Audit | **90% Compliance** 🟢 |
+| **🔐 Keycloak** | Identity Provider | OIDC + SSO 🟢 |
+| **⚡ Vault** | Dynamic Secrets | Service credentials 🟢 |
+| **🐛 Trivy** | Vuln Scanning | CI/CD pipeline 🟢 |
+| **👁️ Falco** | Runtime Security | Pod monitoring 🟢 |
+| **🔍 SonarQube** | Code Quality | Laravel/Golang 🟢 |
+
+**Full security chain: Code → Image → Deploy → Runtime!** 🔒
+
+## 🔒 Security Flowchart (Infra Protection)**
+
+flowchart TB
+    subgraph ENTERPRISE ["Enterprise Auth"]
+        AD[Active Directory<br/>LDAP Backend]
+        K[Keycloak<br/>OIDC Frontend]
+    end
+    
+    subgraph INFRA ["K3s HA Cluster"]
+        P1[ceph-0 ★DUAL]
+        P2[dev1 ★DUAL] 
+        P3[ops1 CP]
+    end
+    
+    subgraph SECURE ["Security Layer"]
+        H[Harbor<br/>Image Scanning]
+        V[Vault<br/>Secrets]
+        L[Lynis<br/>90% Compliance]
+        K[Keycloak<br/>OIDC Auth]
+        T[Trivy<br/>Vuln Scan]
+        F[Falco<br/>Runtime]
+        S[SonarQube<br/>Code Quality]
+        HV[HashiCorp Vault<br/>Dynamic Creds]
+    end
+    
+    subgraph APPS ["Production Apps"]
+        A[Laravel SRE]
+        B[Golang API]
+    end
+    
+    P1 --> H
+    P2 --> V
+    P3 --> L
+    
+    K --> H
+    K --> A
+    V -.-> A
+    V -.-> B
+    HV -.-> K
+    
+    T --> H
+    F --> P1
+    F --> P2
+    S --> A
+    
+    style SECURE fill:#fee2e2
+    style H fill:#ef4444
+    style V fill:#7c3aed
+
+## 🛡️ Security Workflow Detail**
+1. **Developer** → Git push (SonarQube scan)
+2. **GitHub Actions** → Trivy vuln scan  
+3. **Harbor** → Image quarantine (Keycloak auth)
+4. **Vaultwarden** → Inject DB/API secrets
+5. **ArgoCD** → Deploy (Keycloak OIDC)
+6. **Falco** → Runtime monitoring (anomaly → Slack)
+7. **Lynis** → Weekly compliance audit
+8. **Vault** → Rotate service credentials
+
+---
+
+## 🔐 Keycloak + Active Directory Architecture**
+
+**Backend:** Active Directory (LDAP) ← User database
+**Frontend:** Keycloak (OIDC/SAML) ← SSO Gateway  
+**Clients:** Harbor + ArgoCD + Laravel ← OIDC auth
+
+**Flow:**
+1. User → Keycloak (OIDC login)
+2. Keycloak → AD (LDAP lookup) 
+3. AD → User groups → Keycloak roles
+4. Keycloak → JWT token → Apps
+   
+---
 
 ## 🏅 **Certification**
 
