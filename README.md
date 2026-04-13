@@ -156,9 +156,9 @@ flowchart TB
 
 **244 contributions** • **24 repositories**  
 **Top Repos:** 
-- [Farida-Eryani](https://github.com/matahariku/laravel-go-observ)
+- [laravel-go-observ](https://github.com/matahariku/laravel-go-observ)
 - [project-Amsterdam](https://github.com/matahariku/project-Amsterdam) 
-- [K8s-Observability](https://github.com/matahariku/grafana-dashboard)
+- [grafana-dashboard](https://github.com/matahariku/grafana-dashboard)
 
 [![GitHub](https://img.shields.io/badge/GitHub-24%20repos-black?style=for-the-badge&logo=github)](https://github.com/matahariku)
 
