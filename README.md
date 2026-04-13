@@ -194,19 +194,27 @@ flowchart TB
     style K3S fill:#e5e7eb
     style H fill:#ef4444
     style VW fill:#8b5cf6
-    style VW fill:#7c3aed
+    style HV fill:#7c3aed
 ```
 ---
 
 ## 🛡️ **Security Workflow Detail**
 1. **Developer** → Git push (SonarQube scan)
-2. **GitHub Actions** → Trivy vuln scan  
+2. **Jenkins** → Trivy vuln scan  
 3. **Harbor** → Image quarantine (Keycloak auth)
 4. **Vaultwarden** → Inject DB/API secrets
 5. **ArgoCD** → Deploy (Keycloak OIDC)
 6. **Falco** → Runtime monitoring (anomaly → Slack)
 7. **Lynis** → Weekly compliance audit
 8. **Vault** → Rotate service credentials
+
+---
+
+✅ **Jenkins + Trivy** = Industry standard [web:1434]
+✅ **Harbor + Keycloak OIDC** = Production setup [web:1435]  
+✅ **Vaultwarden + Vault** dual secrets = Best practice [web:1436]
+✅ **Falco runtime** = CNCF security standard
+✅ **SonarQube GitLab CI** = Enterprise pipeline
 
 ---
 
