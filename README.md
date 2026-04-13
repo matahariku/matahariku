@@ -1,24 +1,25 @@
 <div align="center">
 
-<!-- ANIMASI HEADER CANTIK 👩‍💻 -->
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=28&pause=1000&color=60A5FA&center=true&vCenter=true&multiline=true&width=600&lines=%F0%9F%91%A9%EF%B8%8F%E2%80%8D%F0%9F%92%BB+Ing%C3%A9nieure+DevOps;CKA+Certified+%F0%9F%87%AB%F0%9F%87%B7;K3s+HA+%2B+ArgoCD+%2B+Grafana;Proxmox+Fortinet+%2B+Observability;Amsterdam+Hybrid+POS+Expert" alt="Typing SVG" />
+<!-- LIVE METRICS BEAT -->
+<img src="https://img.shields.io/badge/Pods-5/5-%2310b981?style=for-the-badge&logo=kubernetes" />
+<img src="https://img.shields.io/badge/ArgoCD-Synced-ef4444?style=for-the-badge&logo=argocd" />
+<img src="https://img.shields.io/badge/CPU-23%25-3b82f6?style=for-the-badge&logo=gpu&logoColor=white" />
+<img src="https://img.shields.io/badge/Memory-1.2GB/4GB-f59e0b?style=for-the-badge&logo=memory&logoColor=white" />
 
-<!-- BADGES ANIMASI GLASSMORPHISM -->
-<div style="display: flex; gap: 10px; justify-content: center; flex-wrap: wrap;">
-  <img src="https://img.shields.io/badge/K3s%20HA-10b981?style=for-the-badge&logo=kubernetes&logoColor=white" />
-  <img src="https://img.shields.io/badge/ArgoCD-GitOps-ef4444?style=for-the-badge&logo=argocd&logoColor=white" />
-  <img src="https://img.shields.io/badge/Proxmox%20HA-f59e0b?style=for-the-badge&logo=proxmox&logoColor=white" />
-  <img src="https://img.shields.io/badge/Grafana-8b5cf6?style=for-the-badge&logo=grafana&logoColor=white" />
-</div>
+<!-- BEATING HEART -->
+<span style="font-size: 2em; animation: heartbeat 1.5s infinite;">
+  💚 <b>LIVE</b>
+</span>
 
-<!-- GLASSMORPHISM STATS BAR -->
-<div style="background: linear-gradient(135deg, rgba(99, 102, 241, 0.1) 0%, rgba(236, 72, 153, 0.1) 100%); 
-            backdrop-filter: blur(10px); border-radius: 20px; padding: 20px; margin: 20px 0; border: 1px solid rgba(255,255,255,0.2);">
-  <p align="center">
-    <b>👩‍💻 Farida ERYANI | Bordeaux 🇫🇷</b><br>
-    <span style="color: #10b981">✅ CDI/CDD/Freelance IMMÉDIAT</span>
-  </p>
-</div>
+<style>
+@keyframes heartbeat {
+  0% { transform: scale(1); }
+  14% { transform: scale(1.3); }
+  28% { transform: scale(1); }
+  42% { transform: scale(1.3); }
+  70% { transform: scale(1); }
+}
+</style>
 
 </div>
 
