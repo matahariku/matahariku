@@ -210,10 +210,10 @@ flowchart TB
 
 ---
 
-✅ **Jenkins + Trivy** = Industry standard [web:1434]
-✅ **Harbor + Keycloak OIDC** = Production setup [web:1435]  
-✅ **Vaultwarden + Vault** dual secrets = Best practice [web:1436]
-✅ **Falco runtime** = CNCF security standard
+✅ **Jenkins + Trivy** = Industry standard [web:1434] \
+✅ **Harbor + Keycloak OIDC** = Production setup [web:1435] \  
+✅ **Vaultwarden + Vault** dual secrets = Best practice [web:1436] \
+✅ **Falco runtime** = CNCF security standard  \
 ✅ **SonarQube GitLab CI** = Enterprise pipeline
 
 ---
