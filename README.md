@@ -1,4 +1,24 @@
 <div align="center">
+<img src="https://github-readme-stats.vercel.app/api?username=matahariku&show_icons=true&theme=radical&hide_border=true&bg_color=0d1117&title_color=60a5fa&text_color=f1f1f1&icon_color=60a5fa" />
+</div>
+
+<!-- TERMINAL ANIMASI -->
+```bash
+fe@ops1:~$ kubectl get nodes
+NAME     STATUS   ROLES                      AGE   VERSION
+ceph-0   Ready    control-plane,etcd,worker   59d   v1.34.2+k3s1
+dev1     Ready    control-plane,etcd,worker   59d   v1.34.2+k3s1
+ops1     Ready    control-plane,etcd          59d   v1.34.2+k3s1
+
+fe@ops1:~$ argocd app list
+NAME        SYNC STATUS   HEALTH STATUS
+sre-laravel Synced        Healthy ✅
+
+fe@ops1:~$ curl localhost:8080
+Laravel SRE LIVE! 🚀
+```
+
+<div align="center">
 
 <!-- BARIS 1: EMAS MURNI + LOGO PUTIH -->
 <img src="https://img.shields.io/badge/FARIDA%20ERYANI-FFD700?style=for-the-badge&logo=kubernetes&logoColor=white&labelColor=0d1117" width="100%"/>
