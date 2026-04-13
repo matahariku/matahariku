@@ -11,7 +11,6 @@
 
 </div>
 
-
 <div align="center">
   <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=18&duration=30000&pause=800&color=60A5FA&center=true&vCenter=true&multiline=false&width=600&lines=Cloud%7CIaC%7CDevOps%0AIng%C3%A9nieure+DevOps+CKA%0AAWS%7CTerraform%7CKubernetes" alt="Typing SVG" />
 </div>
@@ -36,127 +35,78 @@
 name:     Farida ERYANI
 role:     Ingénieure DevOps - CKA Certified (disponible CDI/CDD)
 location: Bordeaux, France 🇫🇷
-
-background: (chronologique récent → ancien)
-  - Projet Observabilité - Laravel | Golang ( Personnel | 04/2026 - en cours )
-  - Projet Observabilité - Python (Freelance | 04/2025 - 03/2026)
-  - Alternance Consultante DevOps @ E-Santé Bretagne (09/2023-01/2025)
-  - Alternance Admin Systèmes & DevOps @ IRIS IT (09/2022-09/2023)
-  - Alternance Technicienne Systèmes & Réseaux (08/2020-07/2022)
 ```
 
 ---
+
 ## 🛠️ **Stack Technique**
 
-### **🧠 CONTAINER & ORCHESTRATION**
-🐳 Docker | ☸️ Kubernetes CKA | 🐙 Ceph-Rook | GlusterFS
-
-
-### **🔧 IaC & AUTOMATISATION**
-📦 Terraform | ⚙️ Ansible | 🎯 ArgoCD | ⛵ Helm | 🧩 Kustomize | ☁️ Cloud-Init
-
-
-### **⚡ CI/CD & DEVOPS**
-🚀 GitHub Actions | 🔄 Jenkins | 📊 GitLab CI | 🐛 Gitea
-
-
-### **☁️ CLOUD & VIRTUALISATION**
-🌐 AWS | Azure | OVH | 🦘 Proxmox HA | 🌀 VMware | KVM
-
-
-### **📈 OBSERVABILITÉ FULL-STACK**
-📊 Grafana | 📈 Prometheus | 🪵 Loki | 🔍 Jaeger | ⏱️ Tempo \
-🗄️ ELK | 🔔 Zabbix | 📝 VictoriaMetrics
-
-
-### **🛡️ SÉCURITÉ & COMPLIANCE**
-🔍 Trivy | 🎼 SonarQube | 🔐 Vault | 🦅 Falco | 🏆 Lynis 90% | ⚓ Harbor
-
-### **🔐 Auth** 
-🔐 Keycloak | 🏢 Active Directory | DHCP/DNS
-
-### **💾 STOCKAGE & BACKUP**
-🐙 Ceph-Rook | 📦 Velero | ☁️ AWS S3 | GlusterFS
-
-
-### **💻 LANGAGES & TOOLS**
-🐚 Bash | 🐍 Python |  💻 PHP / Laravel | 🐹 Golang \
-🌐 HTML/CSS/JS | 🗄️ MongoDB | PostgreSQL | MySQL
-
-### **🌐 Proxy & HA** 
-🦘 NGINX | ⚡HAProxy | 🚀 Traefik | ⚖️  Keepalived
-
-### **🔐 Auth**
-🔐 Keycloak | 🏢 Active Directory | DHCP / DNS
-
-### **🌐 RÉSEAUX & OS**
-🔥 Fortinet | 📡 Cisco | 🛡️ pfSense | 🌉 VLAN/VPN/SD-WAN | Load Balancing | MPLS | SSH | Bastion \
-💻 Debian | Ubuntu | RHEL | AlmaLinux | Windows Servers
- 
+| **Catégorie** | **Technologies** |
+|---------------|------------------|
+| 🧠 **Container** | Docker • Kubernetes CKA • Ceph-Rook • GlusterFS |
+| 🔧 **IaC** | Terraform • Ansible • ArgoCD • Helm • Kustomize |
+| ⚡ **CI/CD** | GitHub Actions • Jenkins • GitLab CI • Gitea |
+| ☁️ **Cloud** | AWS • Azure • OVH • Proxmox HA • VMware |
+| 📈 **Observabilité** | Grafana • Prometheus • Loki • Jaeger • Tempo |
+| 🛡️ **Sécurité** | Trivy • SonarQube • Vault • Falco • Harbor |
+| 💾 **Stockage** | Ceph-Rook • Velero • AWS S3 • GlusterFS |
+| 💻 **Langages** | Bash • Python • PHP/Laravel • Golang |
 
 ---
 
-## 🎯 **Goal**
+## 🎯 **Projets LIVE (SRE Production)**
 
-**Ingénieure DevOps CI/CD** \
-Automatisation complète des infrastructures cloud-native \
-Kubernetes HA clusters + Observabilité full-stack + IaC sécurisée
-
+| **Projet** | **Description** | **URL Live** | **Status** |
+|------------|-----------------|--------------|------------|
+| **Laravel SRE** | GitOps → ArgoCD → K3s → nginx-ingress | [localhost:8080](http://localhost:8080) | 🟢 **LIVE** |
+| **Golang API** | Backend metrics (future) | Coming soon | 🟡 **Plan** |
+| **Grafana Dash** | Observabilité full-stack | monitoring.okfe.net | 🟢 **LIVE** |
+| **ArgoCD UI** | GitOps dashboard | argocd.okfe.net | 🟢 **LIVE** |
+| **Harbor Reg** | Private container registry | harbor.okfe.net | 🟢 **LIVE** |
 
 ---
 
-## 🔭 **En ce moment**
+## 🔭 **Flowchart SRE Pipeline**
 
-
-| 🏗️ Projet              | 📋 Description                                                                                                                               | 🔖 Statut  |
-|------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------|-----------|
-| Projet Observabilité - Laravel \| Golang | Projet personnel – Mise en place d’un système d’observabilité avec Laravel pour le frontend/API et Golang pour les services backend (metrics, logs, alerting, etc.). | 🟢 actif  |
-
-
-
-## **Project Recent**
-
-| 🏗️ Projet              | 📋 Description                                                  | 🔖 Status  |
-|------------------------|------------------------------------------------------------------|-----------|
-| project-Amsterdam      | Restaurant POS system (Python + Excel + 2 printers)            | 🟢 complété |
-| K8s-Observability      | Stack monitoring avancé (Grafana/Prometheus/Jaeger/Loki)       | 🟡 dev    |
-| AWS-Terraform-Mod      | Modules Terraform réutilisables AWS                              | 🔴 plan   |
+```mermaid
+flowchart TD
+    A[GitHub Private<br/>harbor-okfe.net] --> B[ArgoCD<br/>sre-laravel App]
+    B --> C[K3s Cluster<br/>ops1 + dev1]
+    D[Harbor Registry<br/>laravel-sre:v1] --> C
+    C --> E[nginx-ingress<br/>192.168.1.110]
+    E --> F[Laravel App<br/>localhost:8080 ✅]
+    C -.-> G[Golang API<br/>Future]
+    
+    style A fill:#1f6feb
+    style F fill:#10b981
+    style G fill:#f59e0b
+```
 
 ---
 
 ## 🏅 **Certification**
 
-**✅ CKA Obtenue**  
-**Certified Kubernetes Administrator**
-https://www.credly.com/badges/bd619a68-ce90-4a48-978c-e3bcefa0858c
+[![CKA](https://img.shields.io/badge/CKA-Certified-brightgreen?style=for-the-badge&logo=kubernetes)](https://www.credly.com/badges/bd619a68-ce90-4a48-978c-e3bcefa0858c)
 
+---
 
-## 📊 **GitHub Stats (Mars 2026)**
+## 📊 **GitHub Stats**
 
-**244 contributions** cette année  
-**Top Repos récents:**
-- [Farida-Eryani](https://github.com/matahariku/Farida-Eryani) **(6 commits)**
-- [project-Amsterdam](https://github.com/matahariku/project-Amsterdam) **Python** **(4 commits)**
-- [dev-tokonani](https://github.com/matahariku/dev-tokonani) **(3 commits)**
-
-**Popular repos:**
-- [mysources](https://github.com/matahariku/mysources) **2★ 1🍴** Python/JS/PHP
-- [ida-print-kiosk](https://github.com/matahariku/ida-print-kiosk) **1★** C++
+**244 contributions** (Mars 2026)  
+**Top repos:** Farida-Eryani • project-Amsterdam • K8s-Observability
 
 [![GitHub](https://img.shields.io/badge/GitHub-24%20repos-black?style=for-the-badge&logo=github)](https://github.com/matahariku)
 
 ---
 
-## 📫 **Contact Professionnel**
+## 📫 **Contact**
 
 <div align="center">
-
-**🏢 Régions:** Toulouse | Marseille | Paris | Bordeaux | Aix-en-Provence | Toulon  
-**💼 Statut:** ✅ Immédiat CDI/CDD/Freelance  
-**🔗 Contact:** [✉️ Email](mailto:febdx33000@gmail.com) | [🔗 LinkedIn](https://linkedin.com/in/farida-eryani-257480172)
-
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/farida-eryani-257480172/)
-[![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:febdx33000@gmail.com)
-
-**"Kubernetes CKA + Terraform + Ansible + CI/CD + Fortinet + Proxmox HA Expert"**
+**🏢 Régions:** Toulouse • Marseille • Paris • Bordeaux  
+**💼 Statut:** ✅ CDI/CDD/Freelance immédiat  
+**🔗** [✉️ Email](mailto:febdx33000@gmail.com) | [🔗 LinkedIn](https://linkedin.com/in/farida-eryani-257480172)
 </div>
+
+---
+
+**"Kubernetes CKA + GitOps ArgoCD + Terraform + Observabilité Expert"** 🇫🇷🚀
