@@ -30,7 +30,7 @@
 
 ---
 
-## 🧑<200d>💻 **À propos**
+## 👩‍💻 **À propos**
 ```yaml
 name:     Farida ERYANI
 role:     Ingénieure DevOps SRE - CKA Certified (CDI/CDD/Freelance)
@@ -171,22 +171,30 @@ flowchart TB
 
 <div align="center">
 
-[![Toulouse](https://img.shields.io/badge/Toulouse-%23FF6F00?style=for-the-badge&logo=location&logoColor=white)](https://www.google.com/maps/place/Toulouse)
-[![Paris](https://img.shields.io/badge/Paris-%230077B5?style=for-the-badge&logo=location&logoColor=white)](https://www.google.com/maps/place/Paris)
-[![Bordeaux](https://img.shields.io/badge/Bordeaux-%23249DD1?style=for-the-badge&logo=location&logoColor=white)](https://www.google.com/maps/place/Bordeaux)
-
-<br><br>
-
-[![Disponible](https://img.shields.io/badge/Disponible-IMM%C3%89DIAT-10b981?style=for-the-badge&logo=clock&logoColor=white)](mailto:febdx33000@gmail.com)
-[![CDI/CDD](https://img.shields.io/badge/CDI/CDD/Freelance-FFD700?style=for-the-badge&logo=briefcase&logoColor=black)](https://linkedin.com/in/farida-eryani-257480172)
-
-<br><br>
-
-[![Email](https://img.shields.io/badge/Email-febdx33000@gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:febdx33000@gmail.com)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Farida%20ERYANI-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/farida-eryani-257480172)
+<table>
+<tr>
+<td align="center" width="33%">
+  <b>🏢 Régions</b><br>
+  <code>Toulouse • Paris • Bordeaux<br>Marseille • Aix-en-Provence<br>Toulon</code>
+</td>
+<td align="center" width="33%">
+  <b>💼 Disponible</b><br>
+  <span style="color: #10b981">✅ CDI/CDD<br>FREELANCE IMMÉDIAT</span>
+</td>
+<td align="center" width="33%">
+  <b>🔗 Contact</b><br>
+  <a href="mailto:febdx33000@gmail.com">
+    <img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" />
+  </a>
+  <br>
+  <a href="https://linkedin.com/in/farida-eryani-257480172">
+    <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" />
+  </a>
+</td>
+</tr>
+</table>
 
 </div>
-
 ---
 
 <div align="center">
