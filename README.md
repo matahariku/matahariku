@@ -1,23 +1,40 @@
 <div align="center">
 
-<!-- LIVE METRICS BEAT -->
-<img src="https://img.shields.io/badge/Pods-5/5-%2310b981?style=for-the-badge&logo=kubernetes" />
-<img src="https://img.shields.io/badge/ArgoCD-Synced-ef4444?style=for-the-badge&logo=argocd" />
-<img src="https://img.shields.io/badge/CPU-23%25-3b82f6?style=for-the-badge&logo=gpu&logoColor=white" />
-<img src="https://img.shields.io/badge/Memory-1.2GB/4GB-f59e0b?style=for-the-badge&logo=memory&logoColor=white" />
+<!-- BEAT GRAPHIC ANIMASI + HEARTBEAT EFFECT 🔥 -->
+<img src="https://github-profile-trophy.vercel.app/?username=matahariku&theme=radical&no-bg=true&margin-w=15&margin-h=15&no-frame=true" alt="Trophy" />
 
-<!-- BEATING HEART -->
-<span style="font-size: 2em; animation: heartbeat 1.5s infinite;">
-  💚 <b>LIVE</b>
-</span>
+<!-- PULSE / BEAT ANIMASI SUPER COOL -->
+<div style="animation: pulse 2s infinite; display: inline-block;">
+  <img src="https://img.shields.io/badge/SRE%20LIVE-%F0%9F%92%BB-10b981?style=for-the-badge&logo=kubernetes&logoColor=white&labelColor=0d1117" />
+</div>
 
 <style>
-@keyframes heartbeat {
+@keyframes pulse {
   0% { transform: scale(1); }
-  14% { transform: scale(1.3); }
-  28% { transform: scale(1); }
-  42% { transform: scale(1.3); }
-  70% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
+</style>
+
+<!-- TERMINAL BEAT -->
+<div style="background: #0d1117; padding: 20px; border-radius: 10px; border-left: 4px solid #10b981;">
+<pre style="color: #60a5fa; font-family: 'Fira Code', monospace; margin: 0;">
+<span style="color: #10b981">fe@ops1</span>:~$ <span style="animation: blink 1s infinite;">█</span>
+kubectl get nodes
+NAME     STATUS  ROLES           AGE  VERSION
+<span style="color: #10b981">ceph-0  Ready   ★DUAL CP+W    59d  v1.34.2</span>
+<span style="color: #10b981">dev1    Ready   ★DUAL CP+W    59d  v1.34.2</span>
+ops1     Ready   CP+etcd        59d  v1.34.2
+
+<span style="color: #10b981">✓ Laravel LIVE</span> localhost:8080
+<span style="color: #10b981">✓ ArgoCD Synced</span> sre-laravel
+</pre>
+</div>
+
+<style>
+@keyframes blink {
+  0%, 50% { opacity: 1; }
+  51%, 100% { opacity: 0; }
 }
 </style>
 
