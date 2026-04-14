@@ -50,7 +50,7 @@ background:
 
 | **Domain** | **Expertise** |
 |------------|---------------|
-| **🏗️ CLUSTER** | **K3s HA 3CP+3W** • **Proxmox HA** • **Cloud-Init Ansible** |
+| **🏗️ CLUSTER** | **K3s HA 3CP+2W** • **Proxmox HA** • **Cloud-Init Ansible** |
 | **🧠 Container** | **Docker** • **Kubernetes CKA** • Ceph-Rook • GlusterFS |
 | **🔧 IaC** | **Terraform** • **Ansible** • **ArgoCD** • Helm • Kustomize |
 | **⚡ CI/CD** | **GitHub Actions** • **Jenkins** • GitLab CI • Gitea |
@@ -281,5 +281,5 @@ flowchart TB
 
 
 <div align="center">
-<img src="https://img.shields.io/badge/K3s%20HA%203CP%2B3W%20Proxmox%20Cloud-Init%20Fortinet%20HA%20ArgoCD%20GitOps%20Full%20Observabilit%C3%A9%20EXPERT-FFD700?style=for-the-badge&logo=kubernetes&logoColor=black&labelColor=0d1117" width="100%"/>
+<img src="https://img.shields.io/badge/K3s%20HA%203CP%2B2W%20Proxmox%20Cloud-Init%20Fortinet%20HA%20ArgoCD%20GitOps%20Full%20Observabilit%C3%A9%20EXPERT-FFD700?style=for-the-badge&logo=kubernetes&logoColor=black&labelColor=0d1117" width="100%"/>
 </div>
