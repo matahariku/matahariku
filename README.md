@@ -77,44 +77,6 @@ background:
 | **Gitea** | Source code management | `git.kalou.net` | 🟢 **LIVE** |
 
 ---
-
-## 🔭 **Flowchart Laravel SRE Pipeline**
-
-```mermaid
-flowchart TB
-    subgraph PHYSICAL ["3x Proxmox HA Physical Nodes"]
-        P1[ops1<br/>control-plane+etcd]
-        P2[dev1<br/>★DUAL CP+etcd+worker]
-        P3[ceph-0<br/>★DUAL CP+etcd+worker]
-        V[🔐 Vault<br/>Secrets Mgmt]
-    end
-    
-    subgraph K3S ["K3s HA Cluster"]
-        A[ArgoCD<br/>sre-laravel App]
-        B[Harbor<br/>laravel-sre:v1]
-        C[nginx-ingress<br/>192.168.1.110]
-        D[Laravel App<br/>localhost:8080 ✅]
-    end
-    
-    subgraph SECURITY ["Security Dashboard"]
-        S1[Falco+Trivy<br/>→ Grafana]
-    end
-    
-    P1 --> A
-    P2 --> A
-    P3 --> A
-    B --> A
-    A --> C
-    C --> D
-    S1 --> A
-    
-    style P1 fill:#3b82f6
-    style P2 fill:#10b981
-    style P3 fill:#10b981
-    style D fill:#ef4444
-```
-
----
 ## 🌐 **Arsitektur Global & Flow Pipeline**
 
 ```mermaid
@@ -189,6 +151,44 @@ flowchart LR
 4. **ArgoCD** → GitOps, automatically deploying to the `K3s` cluster (`ops1`/`dev1`/`ceph‑0`)
 5. **Falco** → runtime anomaly detection and monitoring of suspicious activities in `K3s`
 6. **Grafana** → observability dashboard: metrics, logs, and traces are all centralised here  
+
+---
+
+## 🔭 **Flowchart Laravel SRE Pipeline**
+
+```mermaid
+flowchart TB
+    subgraph PHYSICAL ["3x Proxmox HA Physical Nodes"]
+        P1[ops1<br/>control-plane+etcd]
+        P2[dev1<br/>★DUAL CP+etcd+worker]
+        P3[ceph-0<br/>★DUAL CP+etcd+worker]
+        V[🔐 Vault<br/>Secrets Mgmt]
+    end
+    
+    subgraph K3S ["K3s HA Cluster"]
+        A[ArgoCD<br/>sre-laravel App]
+        B[Harbor<br/>laravel-sre:v1]
+        C[nginx-ingress<br/>192.168.1.110]
+        D[Laravel App<br/>localhost:8080 ✅]
+    end
+    
+    subgraph SECURITY ["Security Dashboard"]
+        S1[Falco+Trivy<br/>→ Grafana]
+    end
+    
+    P1 --> A
+    P2 --> A
+    P3 --> A
+    B --> A
+    A --> C
+    C --> D
+    S1 --> A
+    
+    style P1 fill:#3b82f6
+    style P2 fill:#10b981
+    style P3 fill:#10b981
+    style D fill:#ef4444
+```
 
 ---
 ## 🌐 **Flowchart Amsterdam POS/ point-of-sale (Hybrid Infra)**
