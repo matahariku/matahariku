@@ -115,7 +115,82 @@ flowchart TB
 ```
 
 ---
+## 🌐 **Arsitektur Global & Flow Pipeline**
 
+```mermaid
+flowchart LR
+    subgraph GIT["Git & Code"]
+        G[GitLab<br>Code: Laravel, Go, Terraform]
+        G --> J
+    end
+
+    subgraph CI["CI / Build & Scan"]
+        J[Jenkins<br>jenkins.okfe.net]
+        J --> S[Trivy<br>Vulnerability Scan]
+        J --> Q[SonarQube<br>sonarqube.okfe.net]
+    end
+
+    subgraph REGISTRY["Registry & Security"]
+        H[Harbor<br>harbor.okfe.net]
+        K[Keycloak+OIDC<br>Auth SSO]
+        S --> H
+        Q --> H
+        K --> H
+        K --> L[Laravel SRE]
+    end
+
+    subgraph CD["CD / GitOps"]
+        A[ArgoCD<br>argocd.okfe.net]
+        H --> A
+    end
+
+    subgraph K8S["K3s HA Cluster"]
+        A --> N[nginx-ingress<br>192.168.1.110]
+        N --> APP[Laravel App<br>laravel-sre.okfe.net]
+        N --> GOFrontend[Go API / Frontend]
+    end
+
+    subgraph SEC["Runtime Security"]
+        F[Falco<br>Monitoring Pods]
+        T[Trivy<br>CI/CD Scan]
+        T --> F
+    end
+
+    subgraph OBS["Observability"]
+        P[Prometheus]
+        L[Loki + Grafana<br>grafana.okfe.net]
+        APP --> P
+        P --> L
+        F --> L
+    end
+
+    subgraph SECRET["Secrets Management"]
+        V[Vaultwarden / Vault<br>Secrets Mgmt]
+        V --> J
+        V --> A
+    end
+
+    style G fill:#10b981
+    style J fill:#ea580c
+    style H fill:#ef4444
+    style K fill:#3b82f6
+    style A fill:#8b5cf6
+    style APP fill:#14b8a6
+    style F fill:#dc2626
+    style L fill:#7c3aed
+    style V fill:#fbbf24
+```
+---
+### 🔍 **Understanding the Diagram**
+
+1. **GitLab** → you push Laravel, Golang, and infrastructure code (Terraform/Ansible)
+2. **Jenkins** → CI/CD, running unit tests, quality gates, `Trivy` scans, and integration with `SonarQube`
+3. **Harbor** → private registry, images pushed here and secured with `Keycloak` OIDC authentication
+4. **ArgoCD** → GitOps, automatically deploying to the `K3s` cluster (`ops1`/`dev1`/`ceph‑0`)
+5. **Falco** → runtime anomaly detection and monitoring of suspicious activities in `K3s`
+6. **Grafana** → observability dashboard: metrics, logs, and traces are all centralised here  
+
+---
 ## 🌐 **Flowchart Amsterdam POS/ point-of-sale (Hybrid Infra)**
 
 ```mermaid
