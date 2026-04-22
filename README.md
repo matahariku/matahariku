@@ -320,7 +320,7 @@ flowchart TB
 - [laravel-go-observ](https://github.com/matahariku/laravel-go-observ)
 - [project-Amsterdam](https://github.com/matahariku/project-Amsterdam) 
 - [grafana-dashboard](https://github.com/matahariku/grafana-dashboard)
-- [grafana-dashboard](https://github.com/matahariku/k3s-ansible)
+- [k3s-ansible](https://github.com/matahariku/k3s-ansible)
 
 [![GitHub](https://img.shields.io/badge/GitHub-24%20repos-black?style=for-the-badge&logo=github)](https://github.com/matahariku)
 
